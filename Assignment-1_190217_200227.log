@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2023.2.9)  23 FEB 2023 00:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2023.2.9)  23 FEB 2023 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,6 +291,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+[1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -302,26 +306,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[2
 
-
-]
-(./Assignment-1_190217_200227.aux) ) 
+] (./Assignment-1_190217_200227.aux) ) 
 Here is how much of TeX's memory you used:
  3879 strings out of 480806
  56443 string characters out of 5905152
- 362583 words of memory out of 6000000
+ 361583 words of memory out of 6000000
  21255 multiletter control sequences out of 15000+600000
  430594 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,8n,62p,3554b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dv
-ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment-1_190217_200227.pdf (1 page, 34382 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Assignment-1_190217_200227.pdf (2 pages, 36436 bytes).
 PDF statistics:
- 17 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
