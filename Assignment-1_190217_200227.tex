@@ -7,6 +7,9 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {./res/} }
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -35,7 +38,33 @@
 	\maketitle
 	\section{System Components}
 	\subsection{Soil Moisture Sensor}
-	The soil moisture sensor consists of a comparator (LM393) that converts analog data to discrete digital signals. The sensor has two thin copper wires, each 5 cm in length, that can be inserted into the soil under test. The sensor works by measuring the conductivity of the soil, which changes depending on the amount of moisture in the soil. When the probes are inserted into the soil, the soil between the probes acts as a variable resistor, with the resistance changing depending on the moisture content in the soil. This resistance can range from infinity (for completely dry soil) to a very low resistance (for 100\% moisture in soil). The change in resistance across the probes (RS) leads to a change in the forward-bias voltage, which results in a corresponding change in input base current. 
+	The soil moisture sensor consists of a comparator (LM393) that converts analog data to discrete digital signals. The sensor has two thin copper wires, each 5 cm in length, that can be inserted into the soil under test. The sensor works by measuring the conductivity of the soil, which changes depending on the amount of moisture in the soil. When the probes are inserted into the soil, the soil between the probes acts as a variable resistor, with the resistance changing depending on the moisture content in the soil. This resistance can range from infinity (for completely dry soil) to a very low resistance (for 100\% moisture in soil). The change in resistance across the probes (RS) leads to a change in the forward-bias voltage, which results in a corresponding change in input base current\cite{c7}.
+	\begin{figure}[H]
+		\includegraphics[width=0.5\textwidth] {Soil-Moisture-Sensors}
+		\caption{Soil Moisture Sensor(LM393)}
+	\end{figure}
+	
+	\subsection{Raspberry Pi}
+	The Raspberry Pi 4B features a 1.5GHz quad-core ARM Cortex-A72 CPU, which provides significant performance improvements over its predecessor, the Raspberry Pi 3B+\cite{c8}.\\ 
+	\\\textbf{Specifications}\\
+	CPU: Broadcom BCM2711, quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz\\
+	RAM: 4GB LPDDR4-3200 SDRAM\\
+	Connectivity: Dual-band 802.11ac wireless, Bluetooth 5.0, Gigabit Ethernet, 2 USB 3.0 ports, 2 USB 2.0 ports, 2 micro-HDMI ports (up to 4Kp60 supported)\\
+	GPIO: Standard 40-pin GPIO header\\
+	Multimedia: H.265; H.264; OpenGL ES 3.0 graphics\\
+	Storage: MicroSD card slot\\
+	Power: 5V DC\\
+	Dimensions: 88 x 58 x 19.5 mm, 46 g\\
+	
+	\subsection{DHT11 Temperature and Humidity Sensor}
+	The DHT11 temperature and humidity sensor is a commonly used digital sensor that is capable of measuring both temperature and humidity in the surrounding environment. It consists of a humidity sensing component and a thermistor, which measures temperature. The sensor works by converting the analog signal from the thermistor and the humidity sensor to digital signals using a single-wire protocol.
+	It has a detection range of 20-90\% relative humidity with an accuracy of ±5\%. It can also measure temperature in the range of 0-50°C with an accuracy of ±2°C. The sensor is relatively low-cost, making it a popular choice for hobbyists and DIY projects\cite{c9}.
+	
+	\subsection{Wi-Fi Module}
+	A Wi-Fi module is a small electronic component that enables wireless connectivity to devices such as computers, smartphones, and other electronic devices. Wi-Fi modules can be interfaced with microcontrollers or single-board computers such as the Raspberry Pi or Arduino, allowing for easy integration into various projects.
+	
+	\subsection{Relay Module}
+	A relay module is an electronic device that is used to control high-voltage and high-current circuits using low-voltage and low-current signals. It typically consists of a relay, which is an electromechanical switch, and a driver circuit that provides the necessary signal to control the relay.
 	
 	
 	%\begin{abstract}
@@ -264,6 +293,12 @@
 		Parween, Sultana, Manjhi, Pankaj, and Sinha, Somnath, ``Design of Automated Irrigation System using ZigBee", 2020
 		\bibitem{c6}
 		J. Gutiérrez, J. F. Villa-Medina, A. Nieto-Garibay and M. Á. Porta-Gándara, ``Automated Irrigation System Using a Wireless Sensor Network and GPRS Module," in IEEE Transactions on Instrumentation and Measurement, vol. 63, no. 1, pp. 166-176, Jan. 2014, doi: 10.1109/TIM.2013.2276487.
+		\bibitem{c7}
+		International Journal of Innovative Research in Computer and 
+		Communication Engineering (IJIRCCE) Prototype for Automatic 
+		Controlling and Remote Accessing of Irrigation MotorR.Jaichandran, Dr. A. Anthony Irudhayaraj, Surabhi
+		\bibitem{c8}RASPBERRY-Pi (http://www.raspberrypi.org/)
+		\bibitem{c9}DHT11 Temperature-Humidity Sensor(https://www.waveshare.com/wiki/DHT11\_Temperature-Humidity\_Sensor/)		
 	\end{thebibliography}
 	
 \end{document}
